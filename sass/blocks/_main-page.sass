@@ -1,21 +1,80 @@
 .mainscreen
   margin: auto
-  width: 1280px
+  max-width: 1280px
   background-image: url(../img/header-image.png)
   position: relative
-  padding: 349px 0 349px 0
+  padding: 0px 0 0px 0
   background-position: center
   background-repeat: no-repeat
   background-size: cover
-  &__label
+  border-radius: 8px
+  &-wrapper
+    padding: 62px 0 45px 107px
+  &-label
+    text-transform: uppercase
     text-decoration: none
     font-style: normal
     font-weight: 600
     font-size: 14px
     line-height: 20px
     color: #36B37E
-  &-button
+  &__button-label
+    padding: 6px 16px 6px 16px
     background: rgba(54, 179, 126, 0.1)
     border-radius: 2000px
     border: none
     outline: none
+    margin-bottom: 28px
+  &-title
+    margin: 0
+    padding: 0
+    font-family: 'HK Grotesk'
+    font-style: normal
+    font-weight: bold
+    font-size: 56px
+    line-height: 68px
+    letter-spacing: 0.2px
+    color: $text-color
+    margin-bottom: 28px
+  &-text
+    max-width: 615px
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: #5A7184
+    margin-bottom: 53px
+  &__button-choise
+    padding: 15px 40px 15px 40px
+    background: rgba(24, 59, 86, 1)
+    border-radius: 8px
+    border: none
+    outline: none
+  &-choise
+    text-decoration: none
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    color: #FFFFFF
+  &-info
+    margin-bottom: 47px
+  &-conditions
+    width: 459px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-payment__link, &-guarantee__link, &-guartext__link
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-decoration: none
+  &-payment-icon, &-guarantee-icon, &-quality-icon
+    margin-right: 7px
+  &-paytext, &-qualtext, &-guartext
+    font-family: 'HK Grotesk'
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    letter-spacing: 0.2px
+    color: #183B56
