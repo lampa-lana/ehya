@@ -31,7 +31,7 @@
               <img src="img/logo.svg" alt="Logo: EHYA" class="logo__image" />
             </a>
           </div>
-          <div class="navbar__menu navbar__menu--mobile--hidden">
+          <div class="navbar-menu">
             <div class="navbar__links">
               <ul class="navbar__list">
                 <li class="navbar__item">
@@ -50,6 +50,18 @@
                   <a href="#" class="navbar-menu__link">Контакты</a>
                 </li>
               </ul>
+              <div class="navbar__username--mobile">
+                <button
+                  class="menu-button navbar-top__menu-button navbar-top__menu-button--mobile"
+                >
+                  <a
+                    href="https://lkfl2.nalog.ru/lkfl/login"
+                    class="user navbar__user"
+                    target="_blank"
+                    >Войти</a
+                  >
+                </button>
+              </div>
             </div>
           </div>
           <div class="navbar__username">
@@ -64,13 +76,14 @@
               >
             </button>
           </div>
-          <button
-            class="menu-button navbar-top__menu-button navbar-top__menu-button--mini"
-          >
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
+          <button class="menu-btn navbar-top__menu-button--mini">
+            <span class="navbar-top__menu-line"></span>
+            <span class="navbar-top__menu-line"></span>
+            <span class="navbar-top__menu-line"></span>
           </button>
+          <!-- <button class="menu-btn--clode navbar-top__menu-button--close">
+            <img src="img/close-icon2.png" alt="Icon: Close Icon" />
+          </button> -->
           <!--/.navbar-top-->
         </div>
         <!-- /. container -->
@@ -98,26 +111,29 @@
             </button>
           </div>
           <div class="mainscreen-conditions">
-            <div class="mainscreen-payment">
-              <a href="#" class="mainscreen-payment__link"
-                ><img
-                  src="img/payment-icon.svg"
-                  alt="Icon: Icon Payment "
-                  class="mainscreen-payment-icon"
-                />
-                <span class="mainscreen-paytext">Онлайн оплата</span></a
-              >
+            <div class="mainscreen-conditions--mini">
+              <div class="mainscreen-payment">
+                <a href="#" class="mainscreen-payment__link"
+                  ><img
+                    src="img/payment-icon.svg"
+                    alt="Icon: Icon Payment "
+                    class="mainscreen-payment-icon"
+                  />
+                  <span class="mainscreen-paytext">Онлайн оплата</span></a
+                >
+              </div>
+              <div class="mainscreen-guarantee">
+                <a href="#" class="mainscreen-guarantee__link"
+                  ><img
+                    src="img/guarantee-icon.svg"
+                    alt="Icon: Icon guarantee "
+                    class="mainscreen-guarantee-icon"
+                  />
+                  <span class="mainscreen-guartext">Гарантия</span></a
+                >
+              </div>
             </div>
-            <div class="mainscreen-guarantee">
-              <a href="#" class="mainscreen-guarantee__link"
-                ><img
-                  src="img/guarantee-icon.svg"
-                  alt="Icon: Icon guarantee "
-                  class="mainscreen-guarantee-icon"
-                />
-                <span class="mainscreen-guartext">Гарантия</span></a
-              >
-            </div>
+
             <div class="mainscreen-quality">
               <a href="#" class="mainscreen-guartext__link">
                 <img
@@ -139,8 +155,6 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/lazyframe.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

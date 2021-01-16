@@ -3,7 +3,7 @@
   max-width: 1280px
   background-image: url(../img/header-image.png)
   position: relative
-  padding: 0px 0 0px 0
+  padding: 0px 0px 0px 0px
   background-position: center
   background-repeat: no-repeat
   background-size: cover
@@ -29,6 +29,7 @@
     margin: 0
     padding: 0
     font-family: 'HK Grotesk'
+    font-feature-settings: "locl" 0
     font-style: normal
     font-weight: bold
     font-size: 56px
@@ -64,6 +65,12 @@
     display: flex
     justify-content: space-between
     align-items: center
+    &--mini
+      display: flex
+      justify-content: space-between
+      align-items: center
+  &-payment
+    margin-right: 29px
   &-payment__link, &-guarantee__link, &-guartext__link
     display: flex
     justify-content: space-between
@@ -73,6 +80,7 @@
     margin-right: 7px
   &-paytext, &-qualtext, &-guartext
     font-family: 'HK Grotesk'
+    font-feature-settings: "locl" 0
     font-weight: 500
     font-size: 16px
     line-height: 20px

@@ -18,17 +18,345 @@
   .logo
     flex-basis: 20%
   .mainscreen
-    max-width: 728px
-@media (max-width: 767px)
+    max-width: 750px
+    &-wrapper
+      padding: 30px 0 30px 30px
+  .navbar
+    &-top
+      padding-bottom: 31px
+    &__links
+      width: 420px
+    &-menu
+      margin-right: 30px
+    &-menu
+      &__link
+        font-weight: 600
+        font-size: 14px
+@media (max-width: 768px)
   .container
     max-width: 650px
-    width: 88%
-  body
-    padding-top: 78px
-@media (max-width: 567px)
+  .navbar
+    overflow-y: auto
+    &-menu
+      display: none
+      position: fixed
+      left: 20px
+      right: -10px
+      bottom: 0
+      top: 9px
+      background-color: #FFFFFF
+      z-index: 99
+      border: 1px solid #c4c1c1
+      box-shadow: 0 0 10px #c4c1c1
+      &--visible
+        display: block
+        max-height: 80%
+        overflow-y: auto
+    &__mobile
+      display: block
+      top: 0
+      right: 0
+      left: 0
+      z-index: 99
+    &__username
+      display: none
+      &--mobile
+        display: block
+    &__list
+      padding: 0
+      margin: 0
+      align-items: start
+      flex-direction: column
+      margin-top: 40px
+      margin-left: 120px
+      margin-bottom: 20px
+    &__item
+      margin-bottom: 20px
+    &-top
+      padding-top: 26px
+      padding-bottom: 46px
+      &__menu
+        &-line
+          width: 21px
+          height: 2px
+          background-color: #333
+        &-button
+          &--mobile
+            margin-left: 120px
+            padding: 13px 125px 12px 125px
+            border: 2px solid #1565D8
+            border-radius: 8px
+            background-color: #FFFFFF
+          &--mini
+            position: absolute
+            top: 33px
+            right: 63px
+            z-index: 100
+            display: flex
+            width: 16px
+            height: 14px
+            padding: 0
+            align-items: center
+            justify-content: space-between
+            flex-direction: column
+            border: none
+            background-color: #FFFFFF
+            cursor: pointer
+          &--close
+            position: absolute
+            display: block
+            z-index: 100
+            top: 61px
+            right: 155px
+
+  .mainscreen
+    max-width: 724px
+    margin: auto
+    background-image: url(../img/header-image2.png)
+    position: relative
+    padding: 0px 0 0px 0
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    border-radius: 8px
+    overflow-y: auto
+    &-wrapper
+      padding: 35px 0 36px 29px
+    &__button-label
+      margin-bottom: 24px
+    &-title
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      margin-bottom: 20px
+    &-text
+      max-width: 401px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      margin-bottom: 36px
+    &-info
+      margin-bottom: 40px
+    &-conditions
+      max-width: 443px
+@media (max-width: 700px)
   .container
     max-width: 500px
+  .mainscreen
+    &-wrapper
+      padding: 35px 0 36px 29px
+    &__button-label
+      margin-bottom: 24px
+    &-title
+      font-style: normal
+      font-weight: bold
+      font-size: 44px
+      letter-spacing: 0.2px
+      margin-bottom: 20px
+    &-text
+      max-width: 401px
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      margin-bottom: 36px
+@media (max-width: 567px)
+  .container
+    max-width: 450px
+  .mainscreen
+    max-width: 711px
+    margin: auto
+    background-image: url(../img/header-image2.png)
+    position: relative
+    padding: 0px 0 0px 0
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    border-radius: 8px
+    &-wrapper
+      padding: 35px 0 36px 29px
+    &__button-label
+      margin-bottom: 24px
+    &-title
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      letter-spacing: 0.2px
+      margin-bottom: 20px
+    &-text
+      max-width: 401px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      margin-bottom: 36px
+    &-info
+      margin-bottom: 40px
+    &-conditions
+      max-width: 443px
+  .navbar
+    &__list
+      margin-left: 80px
+    &-top
+      &__menu-button
+        &--mobile
+          margin-left: 74px
+          padding: 9px 101px 9px 101px
 
+@media (max-width: 480px)
+  .container
+    max-width: 300px
+  .navbar
+    &-top
+      padding: 18px 0 26px 5px
+  .mainscreen
+    max-width: 500px
+    height: 100%
+    margin: auto
+    background-image: url(../img/header-image2.png)
+    position: relative
+    padding: 0px 0 0px 0
+    background-position: right
+    background-repeat: no-repeat
+    background-size: cover
+    border-radius: 8px
+    &-wrapper
+      padding: 378px 0 51px 6px
+    &__button-label
+      position: absolute
+      top: 197px
+      right: 88px
+      margin-bottom: 24px
+    &-title
+      position: absolute
+      top: 236px
+      font-weight: bold
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+      letter-spacing: 0.2px
+    &-text
+      max-width: 401px
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+    &-info
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 40px
+    &-conditions
+      max-width: 300px
+      margin: auto
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: center
+  .navbar
+    &__list
+      margin-left: 30px
+    &-top
+      &__menu-button
+        &--mobile
+          margin-left: 20px
+          padding: 9px 101px 9px 101px
+    &-menu
+      &--visible
+        max-height: 60%
 @media (max-width: 320px)
   .container
     max-width: 280px
+  .mainscreen
+    position: relative
+    max-width: 320px
+    height: 100%
+    margin: auto
+    background-image: url(../img/header-image3.png)
+    position: relative
+    padding: 0px 0 0px 0
+    background-position: top
+    background-repeat: no-repeat
+    background-size: cover
+    border-radius: 8px
+    &-wrapper
+      padding: 563px 0 34px 6px
+    &__button-label
+      position: absolute
+      top: 376px
+      right: 75px
+    &-title
+      position: absolute
+      top: 426px
+      font-style: normal
+      font-weight: bold
+      font-size: 32px
+      letter-spacing: 0.2px
+    &-text
+      font-style: normal
+      font-weight: normal
+      font-size: 17px
+      margin-bottom: 26px
+      text-align: center
+    &-info
+      margin-bottom: 40px
+    &-conditions
+      max-width: 300px
+      align-items: center
+    &-quality
+    &-paytext, &-qualtext, &-guartext
+      font-family: 'HK Grotesk'
+      font-feature-settings: "locl" 0
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.2px
+      color: #183B56
+    &__button-choise
+      padding: 13px 49px 13px 49px
+      background: #183b56
+      border-radius: 8px
+      border: none
+      outline: none
+    &-choise
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+  .navbar
+    &-top
+      padding: 18px 0 39px 5px
+      &__menu-button
+        &--mini
+          top: 24px
+          right: 29px
+        &--mobile
+          margin-left: 20px
+          margin-bottom: 20px
+    &-menu
+      display: none
+      position: fixed
+      left: 9px
+      right: -22px
+      bottom: 0
+      top: 9px
+      background-color: #FFFFFF
+      z-index: 99
+      border: 1px solid #c4c1c1
+      box-shadow: 0 0 10px #c4c1c1
+      &--visible
+        display: block
+        height: 36.5%
+      &__link
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+    &__list
+      margin-left: 22px
+      margin-top: 35px
+      margin-bottom: -1px
