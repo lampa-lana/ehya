@@ -35,6 +35,9 @@
 @media (max-width: 768px)
   .container
     max-width: 650px
+  .navbar-top__menu-line-invisible
+    display: none
+
   .navbar
     overflow-y: auto
     &-menu
@@ -77,9 +80,6 @@
       padding-bottom: 46px
       &__menu
         &-line
-          width: 21px
-          height: 2px
-          background-color: #333
         &-button
           &--mobile
             margin-left: 120px
@@ -102,13 +102,12 @@
             border: none
             background-color: #FFFFFF
             cursor: pointer
-          &--close
-            position: absolute
-            display: block
-            z-index: 100
-            top: 61px
-            right: 155px
-
+  .menu
+    &-btn
+      &--close
+        background-image: url(../img/close-icon.png)
+        background-size: cover
+        z-index: 1000
   .mainscreen
     max-width: 724px
     margin: auto
@@ -200,6 +199,7 @@
     &__list
       margin-left: 80px
     &-top
+      padding-top: 26px
       &__menu-button
         &--mobile
           margin-left: 74px
@@ -210,7 +210,7 @@
     max-width: 300px
   .navbar
     &-top
-      padding: 18px 0 26px 5px
+      padding: 26px 0 26px 5px
   .mainscreen
     max-width: 500px
     height: 100%
@@ -251,7 +251,7 @@
       align-items: center
       margin-bottom: 40px
     &-conditions
-      max-width: 300px
+      max-width: 320px
       margin: auto
       flex-direction: column
       flex-wrap: wrap
@@ -302,11 +302,14 @@
       margin-bottom: 26px
       text-align: center
     &-info
-      margin-bottom: 40px
+      margin-bottom: 22px
     &-conditions
       max-width: 300px
       align-items: center
-    &-quality
+      &--mini
+        min-width: 272px
+        margin-bottom: 15px
+    &-guarantee
     &-paytext, &-qualtext, &-guartext
       font-family: 'HK Grotesk'
       font-feature-settings: "locl" 0
@@ -315,6 +318,10 @@
       line-height: 20px
       letter-spacing: 0.2px
       color: #183B56
+    &-payment
+      margin-right: 0
+    &-payment-icon, &-guarantee-icon, &-quality-icon
+      width: 25px
     &__button-choise
       padding: 13px 49px 13px 49px
       background: #183b56
@@ -340,8 +347,8 @@
     &-menu
       display: none
       position: fixed
-      left: 9px
-      right: -22px
+      left: 8px
+      right: -26px
       bottom: 0
       top: 9px
       background-color: #FFFFFF
@@ -350,7 +357,8 @@
       box-shadow: 0 0 10px #c4c1c1
       &--visible
         display: block
-        height: 36.5%
+        height: 322px
+        overflow-y: auto
       &__link
         font-style: normal
         font-weight: 600
