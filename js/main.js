@@ -8,9 +8,10 @@ menuButton.on('click', function () {
   $(".menu-btn").toggleClass("menu-btn--close");
     $(".navbar-top__menu-line").toggleClass("navbar-top__menu-line--invisible"); 
 });
-  
+
 
 //модальное окно
+
 var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
@@ -45,7 +46,13 @@ var modalButton = $("[data-toggle=modal]");
      
     }
   });
-
+      $(document).click(function (e) {
+    if ($(e.target).is('.modal__overlay', '.modal__dialog')) {
+        modalOverlay.removeClass("modal__overlay--visible");
+        modalDialog.removeClass("modal__dialog--visible");
+    }
+});
+  
    $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",

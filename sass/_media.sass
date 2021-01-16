@@ -32,6 +32,10 @@
       &__link
         font-weight: 600
         font-size: 14px
+  .modal
+    &__dialog
+      width: 375px
+      padding: 19px 60px 33px 60px
 @media (max-width: 768px)
   .container
     max-width: 650px
@@ -152,9 +156,10 @@
       max-width: 443px
     &-payment
       margin-right: 18px
-  .modal__dialog
-    width: 300px
-    padding: 19px 40px 33px 40px
+  .modal
+    &__dialog
+      width: 375px
+      padding: 19px 60px 33px 60px
 @media (max-width: 700px)
   .container
     max-width: 500px
@@ -287,6 +292,10 @@
       top: 9px
       &--visible
         max-height: 60%
+  .modal
+    &__dialog
+      width: 320px
+      padding: 19px 50px 33px 50px
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -347,6 +356,11 @@
       border-radius: 8px
       border: none
       outline: none
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      text-align: center
     &-choise
       font-style: normal
       font-weight: bold
@@ -361,8 +375,9 @@
           top: 21px
           right: 29px
         &--mobile
-          margin-left: 20px
+          margin-left: 14px
           margin-bottom: 20px
+          padding: 9px 98px 9px 101px
     &__links
       width: 295px
     &-menu
@@ -389,3 +404,7 @@
       margin-left: 22px
       margin-top: 35px
       margin-bottom: -1px
+  .modal
+    &__dialog
+      width: 280px
+      padding: 19px 40px 33px 40px
