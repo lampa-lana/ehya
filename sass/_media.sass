@@ -21,9 +21,27 @@
     max-width: 750px
     &-wrapper
       padding: 30px 0 30px 30px
+    &__button-choise
+      &::after, &::before
+        display: none
   .navbar
     &-top
       padding-bottom: 31px
+      &__menu
+        &-button
+          &--max
+            transition: none
+          &::after, &::before
+            display: none
+          &:hover
+            color: rgba(21, 101, 216, 1)
+    &-menu
+      &__link
+        transition: none
+        &::after, &::before
+          display: none
+        &:hover
+          color: #183B56
     &__links
       width: 420px
     &-menu
@@ -36,6 +54,7 @@
     &__dialog
       width: 375px
       padding: 19px 60px 33px 60px
+
 @media (max-width: 768px)
   .container
     max-width: 650px
@@ -99,6 +118,8 @@
             line-height: 22px
             background-color: #FFFFFF
             color: rgba(21, 101, 216, 1)
+            outline: none
+            cursor: pointer
           &--mini
             position: absolute
             top: 29px

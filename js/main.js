@@ -49,7 +49,8 @@ var modalButton = $("[data-toggle=modal]");
       $(document).click(function (e) {
     if ($(e.target).is('.modal__overlay', '.modal__dialog')) {
         modalOverlay.removeClass("modal__overlay--visible");
-        modalDialog.removeClass("modal__dialog--visible");
+      modalDialog.removeClass("modal__dialog--visible");
+      document.getElementsByTagName("body")[0].style.overflow = "auto";
     }
 });
   
