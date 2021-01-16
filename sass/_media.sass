@@ -35,9 +35,11 @@
 @media (max-width: 768px)
   .container
     max-width: 650px
-  .navbar-top__menu-line-invisible
-    display: none
-
+  .navbar
+    &-top
+      &__menu-line
+        &--invisible
+          display: none
   .navbar
     overflow-y: auto
     &-menu
@@ -53,7 +55,7 @@
       box-shadow: 0 0 10px #c4c1c1
       &--visible
         display: block
-        max-height: 80%
+        max-height: 60%
         overflow-y: auto
     &__mobile
       display: block
@@ -87,9 +89,15 @@
             border: 2px solid #1565D8
             border-radius: 8px
             background-color: #FFFFFF
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 22px
+            background-color: #FFFFFF
+            color: rgba(21, 101, 216, 1)
           &--mini
             position: absolute
-            top: 33px
+            top: 29px
             right: 63px
             z-index: 100
             display: flex
@@ -106,12 +114,13 @@
     &-btn
       &--close
         background-image: url(../img/close-icon.png)
+        margin-top: 4px
         background-size: cover
-        z-index: 1000
+        z-index: 100
   .mainscreen
     max-width: 724px
     margin: auto
-    background-image: url(../img/header-image2.png)
+    background-image: url(../img/header-image2.webp)
     position: relative
     padding: 0px 0 0px 0
     background-position: center
@@ -141,6 +150,11 @@
       margin-bottom: 40px
     &-conditions
       max-width: 443px
+    &-payment
+      margin-right: 18px
+  .modal__dialog
+    width: 300px
+    padding: 19px 40px 33px 40px
 @media (max-width: 700px)
   .container
     max-width: 500px
@@ -167,7 +181,7 @@
   .mainscreen
     max-width: 711px
     margin: auto
-    background-image: url(../img/header-image2.png)
+    background-image: url(../img/header-image2.webp)
     position: relative
     padding: 0px 0 0px 0
     background-position: center
@@ -211,11 +225,13 @@
   .navbar
     &-top
       padding: 26px 0 26px 5px
+    &__links
+      width: 300px
   .mainscreen
     max-width: 500px
     height: 100%
     margin: auto
-    background-image: url(../img/header-image2.png)
+    background-image: url(../img/header-image2.webp)
     position: relative
     padding: 0px 0 0px 0
     background-position: right
@@ -265,6 +281,10 @@
           margin-left: 20px
           padding: 9px 101px 9px 101px
     &-menu
+      left: 8px
+      right: -26px
+      bottom: 0
+      top: 9px
       &--visible
         max-height: 60%
 @media (max-width: 320px)
@@ -275,7 +295,7 @@
     max-width: 320px
     height: 100%
     margin: auto
-    background-image: url(../img/header-image3.png)
+    background-image: url(../img/header-image3.webp)
     position: relative
     padding: 0px 0 0px 0
     background-position: top
@@ -306,10 +326,9 @@
     &-conditions
       max-width: 300px
       align-items: center
-      &--mini
+      &__mini
         min-width: 272px
         margin-bottom: 15px
-    &-guarantee
     &-paytext, &-qualtext, &-guartext
       font-family: 'HK Grotesk'
       font-feature-settings: "locl" 0
@@ -339,11 +358,13 @@
       padding: 18px 0 39px 5px
       &__menu-button
         &--mini
-          top: 24px
+          top: 21px
           right: 29px
         &--mobile
           margin-left: 20px
           margin-bottom: 20px
+    &__links
+      width: 295px
     &-menu
       display: none
       position: fixed

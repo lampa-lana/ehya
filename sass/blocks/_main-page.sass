@@ -1,7 +1,7 @@
 .mainscreen
   margin: auto
   max-width: 1280px
-  background-image: url(../img/header-image.png)
+  background-image: url(../img/header-image.webp)
   position: relative
   padding: 0px 0px 0px 0px
   background-position: center
@@ -10,14 +10,6 @@
   border-radius: 8px
   &-wrapper
     padding: 62px 0 45px 107px
-  &-label
-    text-transform: uppercase
-    text-decoration: none
-    font-style: normal
-    font-weight: 600
-    font-size: 14px
-    line-height: 20px
-    color: #36B37E
   &__button-label
     padding: 6px 16px 6px 16px
     background: rgba(54, 179, 126, 0.1)
@@ -25,6 +17,14 @@
     border: none
     outline: none
     margin-bottom: 28px
+    text-transform: uppercase
+    text-decoration: none
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: #36B37E
+    cursor: pointer
   &-title
     margin: 0
     padding: 0
@@ -51,13 +51,13 @@
     border-radius: 8px
     border: none
     outline: none
-  &-choise
     text-decoration: none
     font-style: normal
     font-weight: bold
     font-size: 18px
     line-height: 25px
     color: #FFFFFF
+    cursor: pointer
   &-info
     margin-bottom: 47px
   &-conditions
@@ -65,13 +65,13 @@
     display: flex
     justify-content: space-between
     align-items: center
-    &--mini
+    &__mini
       display: flex
       justify-content: space-between
       align-items: center
   &-payment
     margin-right: 29px
-  &-payment__link, &-guarantee__link, &-guartext__link
+  &-payment__link, &-guarantee__link, &-quality__link
     display: flex
     justify-content: space-between
     align-items: center
