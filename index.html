@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>БРЕНДОВАЯ ОДЕЖДА EHYA</title>
     <link rel="stylesheet" href="css/style.css" class="css" />
-    <link rel="stylesheet" href="css/lazyframe.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" class="css" />
-    <link rel="stylesheet" href="css/aos.css" class="css" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
@@ -50,16 +49,12 @@
                   <a href="#" class="navbar-menu__link">Контакты</a>
                 </li>
               </ul>
-              <div class="navbar__username--mobile">
+              <div class="navbar__username navbar__username--mobile">
                 <button
+                  data-toggle="modal"
                   class="menu-button navbar-top__menu-button navbar-top__menu-button--mobile"
                 >
-                  <a
-                    href="https://lkfl2.nalog.ru/lkfl/login"
-                    class="user navbar__user"
-                    target="_blank"
-                    >Войти</a
-                  >
+                  Войти
                 </button>
               </div>
             </div>
@@ -67,24 +62,26 @@
           <div class="navbar__username">
             <button
               class="menu-button navbar-top__menu-button navbar-top__menu-button--max"
+              data-toggle="modal"
             >
-              <a
-                href="https://lkfl2.nalog.ru/lkfl/login"
-                class="user navbar__user"
-                target="_blank"
-                >Войти</a
-              >
+              Войти
             </button>
           </div>
-          <button class="menu-btn navbar-top__menu-button--mini">
-            <div class="navbar-top__menu-line">
-              <img src="img/menu-btn.png" alt="" class="menu-line" />
-            </div>
+          <div class="navbar-top__menu-line"></div>
+          <button
+            class="menu-btn navbar-top__menu-button navbar-top__line-button navbar-top__menu-button--mini"
+          >
+            <img
+              src="img/menu-btn.png"
+              alt="image"
+              class="navbar-top__menu-image navbar-top__menu-line"
+            />
+
             <!--   <span class="navbar-top__menu-line"></span>
             <span class="navbar-top__menu-line"></span>
             <span class="navbar-top__menu-line"></span> -->
           </button>
-          <!-- <button class="menu-btn--clode navbar-top__menu-button--close">
+          <!-- <button class="menu-btn navbar-top__menu-button">
             <img src="img/close-icon2.png" alt="Icon: Close Icon" />
           </button> -->
           <!--/.navbar-top-->
@@ -94,9 +91,7 @@
       <div class="mainscreen">
         <div class="mainscreen-wrapper">
           <div class="mainscreen-info">
-            <button class="mainscreen__button-label">
-              <a href="#" class="mainscreen-label"># ready to be cool</a>
-            </button>
+            <button class="mainscreen__button-label"># ready to be cool</button>
             <h1 class="mainscreen-title">
               Каждый может<br />
               быть крутым <br />
@@ -109,12 +104,10 @@
                 Начните сейчас.
               </span>
             </div>
-            <button class="mainscreen__button-choise">
-              <a href="#" class="mainscreen-choise">Подобрать одежду</a>
-            </button>
+            <button class="mainscreen__button-choise">Подобрать одежду</button>
           </div>
           <div class="mainscreen-conditions">
-            <div class="mainscreen-conditions--mini">
+            <div class="mainscreen-conditions__mini">
               <div class="mainscreen-payment">
                 <a href="#" class="mainscreen-payment__link"
                   ><img
@@ -138,7 +131,7 @@
             </div>
 
             <div class="mainscreen-quality">
-              <a href="#" class="mainscreen-guartext__link">
+              <a href="#" class="mainscreen-quality__link">
                 <img
                   src="img/quality-icon.svg"
                   alt="Icon: Icon quality "
@@ -153,6 +146,57 @@
       </div>
     </header>
     <footer></footer>
+    <div class="modal" id="modal_1">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <div class="modal__contact-form">
+          <h3 class="modal__title">Ваши данные</h3>
+          <form action="send.php" method="POST" class="modal__form form">
+            <input
+              type="text"
+              class="input modal__input modal__input-name"
+              placeholder="Ваше Имя*"
+              name="name"
+              required
+              minlength="2"
+            />
+            <input
+              type="tel"
+              class="input modal__input modal__input-number input__phone"
+              placeholder="Номер телефона*"
+              name="phone"
+              required
+              minlength="17"
+            />
+            <input
+              type="email"
+              class="input modal__input modal__input-email"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+            <textarea
+              name="text"
+              class="textarea modal__textarea"
+              placeholder="Сообщение"
+            ></textarea>
+            <div class="modal__form-submit">
+              <span class="modal__info">*Обязательные поля</span>
+              <button class="button modal__button" type="submit">
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- /.modal__contact-form -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
