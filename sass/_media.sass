@@ -5,6 +5,23 @@
     flex-basis: 20%
   .mainscreen
     max-width: 1100px
+  .new
+    &-green
+      margin-right: 20px
+    &-image
+      margin-right: 30px
+    &-title
+      font-size: 36px
+    &-text
+      width: 200px
+      font-size: 18px
+      line-height: 30px
+      margin-bottom: 20px
+    &-look
+      &__link
+        margin-right: 8px
+    &-article
+      min-width: 252px
 @media (max-width: 1200px)
   .container
     max-width: 900px
@@ -12,6 +29,21 @@
     flex-basis: 20%
   .mainscreen
     max-width: 950px
+  .new
+    &-green
+      margin-right: 20px
+    &-image
+      margin-right: 20px
+    &-title
+      font-size: 36px
+    &-text
+      width: 200px
+      font-size: 18px
+      line-height: 30px
+      margin-bottom: 20px
+    &-look
+      &__link
+        margin-right: 8px
 @media (max-width: 992px)
   .container
     max-width: 650px
@@ -54,7 +86,34 @@
     &__dialog
       width: 375px
       padding: 19px 60px 33px 60px
-
+  .new
+    padding: 0px 0px 80px 0px
+    &-article
+      min-height: 100%
+      display: flex
+      justify-content: space-between
+      align-items: start
+      flex-direction: column
+    &-title
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+    &-text
+      min-width: 100%
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      color: #5A7184
+    &-image
+      margin-bottom: 20px
+  .container
+    &-new
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-direction: column
 @media (max-width: 768px)
   .container
     max-width: 650px
@@ -64,6 +123,7 @@
         &--invisible
           display: none
   .navbar
+    padding-bottom: 80px
     overflow-y: auto
     &-menu
       display: none
@@ -90,6 +150,7 @@
       display: none
       &--mobile
         display: block
+        margin-bottom: 20px
     &__list
       padding: 0
       margin: 0
@@ -181,6 +242,28 @@
     &__dialog
       width: 375px
       padding: 19px 60px 33px 60px
+  .navbar
+    padding-bottom: 64px
+  .new
+    padding: 0px 0px 104px 0px
+    &-image
+      margin: auto
+      margin-bottom: 36px
+    &-green
+      margin-right: 28px
+    &-article
+      min-width: 672px
+      justify-content: flex-start
+    &-title
+      margin-bottom: 24px
+    &-text
+      margin-bottom: 25px
+    &-look
+      &__link
+        margin-right: 15px
+  .container
+    &-new
+      max-width: 672px
 @media (max-width: 700px)
   .container
     max-width: 500px
@@ -201,6 +284,57 @@
       font-weight: normal
       font-size: 16px
       margin-bottom: 36px
+  .new
+    padding: 0px 0px 104px 0px
+    &-image
+      margin: auto
+      margin-bottom: 36px
+    &-green
+      max-width: 250px
+      margin-right: 10px
+      object-fit: cover
+    &__green
+      &-image
+        width: 100%
+        object-fit: cover
+    &-furniture
+      &__chair
+        max-width: 250px
+        object-fit: cover
+        margin-bottom: 20px
+      &__tree
+        max-width: 250px
+        object-fit: cover
+    &__chair
+      width: 100%
+      object-fit: cover
+    &__tree
+      width: 100%
+      object-fit: cover
+    &-article
+      min-width: 450px
+      justify-content: space-between
+      align-items: center
+    &-title
+      font-style: normal
+      font-weight: bold
+      font-size: 40px
+      line-height: 36px
+      text-align: center
+      letter-spacing: 0.2px
+      margin-bottom: 24px
+    &-text
+      font-weight: normal
+      font-size: 20px
+      line-height: 28px
+      text-align: center
+      margin-bottom: 25px
+    &-look
+      &__link
+        margin-right: 15px
+  .container
+    &-new
+      max-width: 600px
 @media (max-width: 567px)
   .container
     max-width: 450px
@@ -244,7 +378,60 @@
         &--mobile
           margin-left: 74px
           padding: 9px 101px 9px 101px
-
+  .new
+    &-image
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 36px
+    &-furniture
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: baseline
+    &-green
+      max-width: 320px
+      object-fit: cover
+      margin-right: 0
+      margin-bottom: 14px
+    &__green
+      &-image
+        width: 100%
+        object-fit: cover
+    &-furniture
+      &__chair
+        max-width: 200px
+        object-fit: cover
+        margin-bottom: 0
+        margin-right: 14px
+      &__tree
+        max-width: 200px
+        object-fit: cover
+        margin-bottom: 0
+    &__chair
+      width: 100%
+      object-fit: cover
+    &__tree
+      width: 100%
+      object-fit: cover
+    &-article
+    &-title
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      letter-spacing: 0.2px
+      color: #183B56
+    &-text
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      color: #5A7184
+    &-look
 @media (max-width: 480px)
   .container
     max-width: 300px
@@ -317,6 +504,9 @@
     &__dialog
       width: 320px
       padding: 19px 50px 33px 50px
+  .new
+    &-article
+      min-width: 280px
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -429,3 +619,58 @@
     &__dialog
       width: 280px
       padding: 19px 40px 33px 40px
+  .new
+    &-look
+      display: none
+    &-image
+      width: 283px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 37px
+    &-furniture
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: baseline
+    &-green
+      max-width: 290px
+      max-height: 300px
+      margin-right: 0
+      margin-bottom: 14px
+      overflow: hidden
+      object-fit: cover
+    &__green
+      &-image
+        width: 290px
+        height: 300px
+        object-fit: cover
+        overflow: hidden
+    &-furniture
+      &__chair
+        width: 139px
+        height: 97px
+        object-fit: cover
+        margin-bottom: 0
+        margin-right: 14px
+      &__tree
+        width: 139px
+        height: 97px
+        object-fit: cover
+        margin-bottom: 0
+    &__chair
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__tree
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &-title
+      margin-bottom: 19px
+    &-text
+      margin-bottom: 0
+  .container
+    &-new
+      width: 290px

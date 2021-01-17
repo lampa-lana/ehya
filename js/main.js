@@ -59,8 +59,12 @@ var modalButton = $("[data-toggle=modal]");
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Пожалуйста укажите Ваше имя",
-          minlength: "Ваше имя должно быть не менее двух букв",
+          required: "Пожалуйста, укажите Ваш логин",
+          minlength: "Ваш логин должен быть не менее двух символов",
+        },
+        password: {
+          required: "Пожалуйста, укажите Ваш пароль",
+          minlength: "Ваш пароль должен быть не менее пяти символов",
         },
         email: {
           required: "Пожалуйста укажите адрес Вашей почты",

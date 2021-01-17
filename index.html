@@ -145,6 +145,53 @@
         <!-- /. container-header -->
       </div>
     </header>
+    <section class="new">
+      <div class="container container-new">
+        <div class="new-image">
+          <div class="new-green">
+            <img
+              src="img/green.webp"
+              class="new__green-image"
+              alt="foto: girl with green bush"
+            />
+          </div>
+          <div class="new-furniture">
+            <div class="new-furniture__chair">
+              <img
+                src="img/chair.webp"
+                class="new__chair"
+                alt="foto: chairs and tables"
+              />
+            </div>
+            <div class="new-furniture__tree">
+              <img
+                src="img/tree.webp"
+                class="new__tree"
+                alt="foto: room with a tree"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="new-article">
+          <h2 class="new-title">Новая зимняя коллекция</h2>
+          <div class="new-text">
+            Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции,
+            нажав кнопку ниже. Успейте купить, пока коллекция есть в наличии.
+            Используйте код EHYA20, чтобы получить 20%&nbsp;скидку.
+          </div>
+          <div class="new-look">
+            <a href="#" class="new-look__link">Посмотреть коллекцию</a>
+            <img
+              src="img/Icon-new.svg"
+              class="new-look__image"
+              alt="icon: forward arrow"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- /. container-new -->
+    </section>
+    <!-- /. section.new -->
     <footer></footer>
     <div class="modal" id="modal_1">
       <div class="modal__overlay"></div>
@@ -159,17 +206,29 @@
             <input
               type="text"
               class="input modal__input modal__input-name"
-              placeholder="Ваше Имя*"
+              placeholder="Ваше логин*"
               name="name"
               required
               minlength="2"
             />
             <input
+              type="password"
+              class="input modal__input modal__input-password"
+              placeholder="Пароль*"
+              name="password"
+              required
+              minlength="5"
+            />
+            <div class="modal__form-submit">
+              <span class="modal__info">*Обязательные поля</span>
+              <button class="button modal__button" type="submit">Вход</button>
+            </div>
+            <h3 class="modal__title">Напишите нам</h3>
+            <input
               type="tel"
               class="input modal__input modal__input-number input__phone"
               placeholder="Номер телефона*"
               name="phone"
-              required
               minlength="17"
             />
             <input
@@ -177,7 +236,6 @@
               class="input modal__input modal__input-email"
               placeholder="Email*"
               name="email"
-              required
             />
             <textarea
               name="text"

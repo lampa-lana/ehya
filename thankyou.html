@@ -6,6 +6,7 @@
     <title>БРЕНДОВАЯ ОДЕЖДА EHYA</title>
     <link rel="stylesheet" href="css/style.css" class="css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" class="css" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
@@ -25,7 +26,7 @@
       <div class="container">
         <div class="navbar-top">
           <div class="logo">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
               <img src="img/logo.svg" alt="Logo: EHYA" class="logo__image" />
             </a>
           </div>
@@ -48,7 +49,7 @@
                   <a href="#" class="navbar-menu__link">Контакты</a>
                 </li>
               </ul>
-              <div class="navbar__username--mobile">
+              <div class="navbar__username navbar__username--mobile">
                 <button
                   data-toggle="modal"
                   class="menu-button navbar-top__menu-button navbar-top__menu-button--mobile"
@@ -66,19 +67,21 @@
               Войти
             </button>
           </div>
-          <button class="menu-btn navbar-top__menu-button--mini">
-            <div class="navbar-top__menu-line">
-              <img
-                src="img/menu-btn.png"
-                alt="image"
-                class="navbar-top__menu-image"
-              />
-            </div>
+          <div class="navbar-top__menu-line"></div>
+          <button
+            class="menu-btn navbar-top__menu-button navbar-top__line-button navbar-top__menu-button--mini"
+          >
+            <img
+              src="img/menu-btn.png"
+              alt="image"
+              class="navbar-top__menu-image navbar-top__menu-line"
+            />
+
             <!--   <span class="navbar-top__menu-line"></span>
             <span class="navbar-top__menu-line"></span>
             <span class="navbar-top__menu-line"></span> -->
           </button>
-          <!-- <button class="menu-btn--clode navbar-top__menu-button--close">
+          <!-- <button class="menu-btn navbar-top__menu-button">
             <img src="img/close-icon2.png" alt="Icon: Close Icon" />
           </button> -->
           <!--/.navbar-top-->
@@ -88,9 +91,7 @@
       <div class="mainscreen">
         <div class="mainscreen-wrapper">
           <div class="mainscreen-info">
-            <button class="mainscreen__button-label">
-              <a href="#" class="mainscreen-label"># ready to be cool</a>
-            </button>
+            <button class="mainscreen__button-label"># ready to be cool</button>
             <h1 class="mainscreen-title">
               Каждый может<br />
               быть крутым <br />
@@ -98,16 +99,16 @@
             </h1>
             <div class="mainscreen-text">
               <span class="mainscreen__text">
-                Ваше сообщение принято! <br />
-                Чтобы вернуться на предыдущую страницу нажмите кнопку
+                Ваше сообщение принято! Чтобы вернуться на предыдущую страницу
+                нажмите кнопку
               </span>
-            </div>
-            <button class="mainscreen__button-choise">
-              <a href="index.html" class="mainscreen-choise">вернуться</a>
-            </button>
-          </div>
+            </div>  
+            <div class="mainscreen__thank-back">
+            <a href="index.html" class="thank-back__main">
+            <button class="mainscreen__button-choise">Вернуться</button>
+          </div>         
           <div class="mainscreen-conditions">
-            <div class="mainscreen-conditions--mini">
+            <div class="mainscreen-conditions__mini">
               <div class="mainscreen-payment">
                 <a href="#" class="mainscreen-payment__link"
                   ><img
@@ -131,7 +132,7 @@
             </div>
 
             <div class="mainscreen-quality">
-              <a href="#" class="mainscreen-guartext__link">
+              <a href="#" class="mainscreen-quality__link">
                 <img
                   src="img/quality-icon.svg"
                   alt="Icon: Icon quality "
@@ -159,17 +160,28 @@
             <input
               type="text"
               class="input modal__input modal__input-name"
-              placeholder="Ваше Имя*"
+              placeholder="Ваше логин*"
               name="name"
               required
               minlength="2"
             />
             <input
+              type="password"
+              class="input modal__input modal__input-password"
+              placeholder="Пароль*"
+              name="password"
+              required
+              minlength="5"
+            />
+            <div class="modal__form-submit">
+              <span class="modal__info">*Обязательные поля</span>
+              <button class="button modal__button" type="submit">Вход</button>
+            </div>
+            <input
               type="tel"
               class="input modal__input modal__input-number input__phone"
               placeholder="Номер телефона*"
               name="phone"
-              required
               minlength="17"
             />
             <input
@@ -177,7 +189,6 @@
               class="input modal__input modal__input-email"
               placeholder="Email*"
               name="email"
-              required
             />
             <textarea
               name="text"
@@ -185,10 +196,10 @@
               placeholder="Сообщение"
             ></textarea>
             <div class="modal__form-submit">
+              <span class="modal__info">*Обязательные поля</span>
               <button class="button modal__button" type="submit">
                 Отправить
               </button>
-              <span class="modal__info">* Обязательные поля</span>
             </div>
           </form>
         </div>
