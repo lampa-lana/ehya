@@ -22,6 +22,11 @@
         margin-right: 8px
     &-article
       min-width: 252px
+  .trends
+    &-card
+      &--none
+        display: block
+
 @media (max-width: 1200px)
   .container
     max-width: 900px
@@ -44,6 +49,12 @@
     &-look
       &__link
         margin-right: 8px
+  .trends
+    &-wrapper
+
+  .container
+    &-trends
+
 @media (max-width: 992px)
   .container
     max-width: 650px
@@ -114,6 +125,30 @@
       justify-content: space-between
       align-items: center
       flex-direction: column
+  .trends
+    &-card
+      padding-left: 20px
+      flex-basis: 50%
+      &--none
+        display: none
+  .trends
+    &__wrapper
+      &-tabs
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-direction: column
+    &-image
+      width: 280px
+      height: 350px
+      overflow: hidden
+      object-fit: cover
+      border-radius: 8px
+    &-img
+      width: 280px
+      height: 350px
+      overflow: hidden
+      object-fit: cover
 @media (max-width: 768px)
   .container
     max-width: 650px
@@ -123,7 +158,6 @@
         &--invisible
           display: none
   .navbar
-    padding-bottom: 80px
     overflow-y: auto
     &-menu
       display: none
@@ -243,9 +277,9 @@
       width: 375px
       padding: 19px 60px 33px 60px
   .navbar
-    padding-bottom: 64px
+    padding-bottom: 80px
   .new
-    padding: 0px 0px 104px 0px
+    padding: 0px 0px 80px 0px
     &-image
       margin: auto
       margin-bottom: 36px
@@ -264,6 +298,32 @@
   .container
     &-new
       max-width: 672px
+  .trends
+    &__wrapper
+      &-tabs
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-direction: column
+        margin-bottom: 36px
+    &-image
+      width: 280px
+      height: 350px
+      overflow: hidden
+      object-fit: cover
+      border-radius: 8px
+    &-img
+      width: 280px
+      height: 350px
+      overflow: hidden
+      object-fit: cover
+    &-title
+      margin-bottom: 10px
+  .tabs
+    &__item
+      padding: 16px 23px 20px 20px
+      &--active
+        padding: 16px 17px 20px 20px
 @media (max-width: 700px)
   .container
     max-width: 500px
@@ -335,6 +395,20 @@
   .container
     &-new
       max-width: 600px
+  .trends
+    &-image
+      width: 220px
+      height: 350px
+      overflow: hidden
+      object-fit: cover
+      border-radius: 8px
+    &-img
+      width: 220px
+      height: 350px
+      overflow: hidden
+      object-fit: cover
+    &-title
+      margin-bottom: 10px
 @media (max-width: 567px)
   .container
     max-width: 450px
@@ -432,6 +506,50 @@
       text-align: center
       color: #5A7184
     &-look
+  .trends
+    &-image
+      width: 180px
+      height: 200px
+      overflow: hidden
+      object-fit: cover
+      border-radius: 8px
+      &__see
+        font-style: normal
+        font-weight: bold
+        font-size: 17px
+        line-height: 20px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #FAFAFB
+        top: 95px
+        right: 42px
+        width: 100px
+    &-plus
+      top: 63px
+      right: 78px
+    &-img
+      width: 100%
+      height: 100%
+      overflow: hidden
+      object-fit: cover
+    &-link
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.2px
+    &-price
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 24px
+    &-basket
+      flex-basis: 33%
+    &__basket
+      &-icon
+        max-width: 16px
+      &-plus
+        max-width: 25px
 @media (max-width: 480px)
   .container
     max-width: 300px
@@ -486,6 +604,7 @@
       flex-wrap: wrap
       align-items: center
   .navbar
+    padding-bottom: 65px
     &__list
       margin-left: 30px
     &-top
@@ -505,8 +624,77 @@
       width: 320px
       padding: 19px 50px 33px 50px
   .new
+    padding: 0px 0px 107px 0px
     &-article
       min-width: 280px
+  .container
+    &-trends
+      max-width: 400px
+  .trends
+    &-image
+      width: 140px
+      height: 170px
+      overflow: hidden
+      object-fit: cover
+      border-radius: 8px
+      margin-bottom: 12px
+      margin-left: 2px
+      &__see
+        font-style: normal
+        font-weight: bold
+        font-size: 17px
+        line-height: 20px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #FAFAFB
+        top: 87px
+        right: 16px
+        width: 100px
+    &-plus
+      top: 44px
+      right: 56px
+    &-img
+      width: 140px
+      height: 170px
+      overflow: hidden
+      object-fit: cover
+      border-radius: 8px
+    &-shop
+      margin-top: 1px
+      margin-left: 6px
+    &-basket
+      flex-basis: 70%
+    &__basket
+      &-icon
+        max-width: 13px
+    &-link
+      margin-left: 4px
+    &-card
+      padding: 0
+      margin-bottom: 26px
+    &-title
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      letter-spacing: 0.2px
+    &__wrapper
+      &-tabs
+        margin-bottom: 18px
+  .tabs
+    &__item
+      padding: 16px 17px 20px 1px
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      &--active
+        padding: 16px 17px 20px 20px
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -674,3 +862,6 @@
   .container
     &-new
       width: 290px
+  .container
+    &-trends
+      max-width: 300px

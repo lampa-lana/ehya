@@ -83,3 +83,14 @@ var modalButton = $("[data-toggle=modal]");
     $(".input__phone").mask("+7(999) 999-99-99", {
       } );
   }); 
+
+ var tabsItem = $('.tabs__item');
+ var contentItem = $('.content__item');
+
+  tabsItem.on('click', function (event) {
+    var activeContent = $(this).attr("data-target");
+    tabsItem.removeClass("tabs__item--active");
+    contentItem.removeClass("content__item--active");
+  $(activeContent).addClass("content__item--active");
+  $(this).addClass("tabs__item--active");
+  });
