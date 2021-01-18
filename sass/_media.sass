@@ -51,10 +51,8 @@
         margin-right: 8px
   .trends
     &-wrapper
-
   .container
     &-trends
-
 @media (max-width: 992px)
   .container
     max-width: 650px
@@ -62,11 +60,19 @@
     flex-basis: 20%
   .mainscreen
     max-width: 750px
+    svg path
+      fill: rgba(21, 101, 216, 1)
+      stroke: inherit
+      stroke-width: inherit
+      &__icon
+      &:hover
+        fill: rgba(21, 101, 216, 1)
     &-wrapper
       padding: 30px 0 30px 30px
     &__button-choise
       &::after, &::before
         display: none
+
   .navbar
     &-top
       padding-bottom: 31px
@@ -119,6 +125,13 @@
       color: #5A7184
     &-image
       margin-bottom: 20px
+    &-look
+      &__link
+        transition: none
+        &::after, &::before
+          display: none
+        &:hover
+          color: #1565D8
   .container
     &-new
       display: flex
@@ -131,6 +144,13 @@
       flex-basis: 50%
       &--none
         display: none
+    svg path
+      fill: rgba(21, 101, 216, 1)
+      stroke: inherit
+      stroke-width: inherit
+      &__icon
+      &:hover
+        fill: #1565D8
   .trends
     &__wrapper
       &-tabs
@@ -149,9 +169,30 @@
       height: 350px
       overflow: hidden
       object-fit: cover
+    &-basket
+      flex-basis: 23%
+    &-link
+      transition: none
+      &::after, &::before
+        display: none
+      &:hover
+        color: #183B56
 @media (max-width: 768px)
+  body
+    padding-top: 105px
   .container
     max-width: 650px
+  .navbar
+    &-top
+      &__mobile
+        width: 100%
+        background-color: #FFFFFF
+        display: block
+        position: fixed
+        top: 0
+        right: 0
+        left: 0
+        z-index: 99
   .navbar
     &-top
       &__menu-line
@@ -198,6 +239,7 @@
     &-top
       padding-top: 26px
       padding-bottom: 46px
+      padding-left: 57px
       &__menu
         &-line
         &-button
@@ -299,6 +341,8 @@
     &-new
       max-width: 672px
   .trends
+    &-shop
+      margin-top: 8px
     &__wrapper
       &-tabs
         display: flex
@@ -590,7 +634,7 @@
     max-width: 300px
   .navbar
     &-top
-      padding: 26px 0 26px 5px
+      padding: 26px 0 26px 57px
     &__links
       width: 300px
   .mainscreen
@@ -700,8 +744,9 @@
     &-basket
       flex-basis: 70%
     &__basket
-      &-icon
-        max-width: 13px
+      &-svg
+        width: 16px
+        height: 16px
     &-link
       margin-left: 4px
     &-card
@@ -731,6 +776,8 @@
         font-size: 16px
         line-height: 22px
 @media (max-width: 320px)
+  body
+    padding-top: 90px
   .container
     max-width: 280px
   .mainscreen
@@ -746,7 +793,7 @@
     background-size: cover
     border-radius: 8px
     &-wrapper
-      padding: 563px 0 34px 6px
+      padding: 563px 0 27px 6px
     &__button-label
       position: absolute
       top: 376px
@@ -765,13 +812,13 @@
       margin-bottom: 26px
       text-align: center
     &-info
-      margin-bottom: 22px
+      margin-bottom: 13px
     &-conditions
       max-width: 300px
       align-items: center
       &__mini
         min-width: 272px
-        margin-bottom: 15px
+        margin-bottom: 3px
     &-paytext, &-qualtext, &-guartext
       font-family: 'HK Grotesk'
       font-feature-settings: "locl" 0
@@ -802,8 +849,9 @@
       line-height: 22px
       text-align: center
   .navbar
+    padding-bottom: 65px
     &-top
-      padding: 18px 0 39px 5px
+      padding: 18px 0 39px 25px
       &__menu-button
         &--mini
           top: 21px
@@ -909,6 +957,10 @@
       border-radius: 8px
       margin-bottom: 12px
       margin-left: 2px
+      &__see
+        top: 84px
+    &-plus
+      top: 41px
     &-img
       width: 100%
       height: 100%
@@ -949,3 +1001,12 @@
         height: 114%
         overflow: hidden
         object-fit: cover
+    &__wrapper
+      &-tabs
+        margin-bottom: 16px
+    &-shop
+      margin-top: 5px
+    &__basket
+      &-svg
+        width: 16px
+        height: 16px

@@ -1,6 +1,13 @@
 .trends
   margin: auto
   padding: 0px 0px 145px 0px
+  svg path
+    fill: rgba(21, 101, 216, 1)
+    stroke: inherit
+    stroke-width: inherit
+    &__icon
+    &:hover
+      fill: #36B37E
   &-show
     display: flex
     justify-content: space-between
@@ -90,7 +97,8 @@
       color: #FFFFFF
       text-decoration: none
   &-link
-    margin-bottom: 3px
+    display: inline-block
+    margin-bottom: -3px
     text-decoration: none
     font-family: 'HK Grotesk'
     font-feature-settings: "locl" 0
@@ -101,6 +109,18 @@
     letter-spacing: 0.2px
     color: #183B56
     margin-left: 14px
+    transition: all 0.6s
+    &:after
+      display: block
+      content: ''
+      width: 0%
+      height: 1px
+      background: #1565D8
+      ransition: width 0.4s ease-in-out
+    &:hover:after, &:focus:after
+      width: 100%
+    &:hover
+      color: #36B37E
     &--none
       color: #FFFFFF
   &-plus
@@ -182,6 +202,7 @@
         display: block
 .container
   &-trends
+    max-width: 1135px
 .content
   &__item
     display: none
