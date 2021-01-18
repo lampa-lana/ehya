@@ -95,26 +95,25 @@ var modalButton = $("[data-toggle=modal]");
   $(this).addClass("tabs__item--active");
   });
 
-
-  $(function() {
-  // при нажатии на кнопку scrollup
-  $('.scrollup').click(function() {
-    // переместиться в верхнюю часть страницы
-    $("html, body").animate({
-      scrollTop:0
-    },1000);
-  })
-})
-// при прокрутке окна (window)
-$(window).scroll(function() {
-  // если пользователь прокрутил страницу более чем на 200px
-  if ($(this).scrollTop()>200) {
-    // то сделать кнопку scrollup видимой
-    $('.scrollup').fadeIn();
-  }
-  // иначе скрыть кнопку scrollup
-  else {
-    $('.scrollup').fadeOut();
-  }
-});
-
+   var reviewsSlider = new Swiper('.reviews-slider', {
+    // Optional parameters
+    loop: true,
+    keyboard: {
+      enabled: true,
+     },
+    /* spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      }, */
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.reviews-slider__button-next',
+      prevEl: '.reviews-slider__button-prev',
+    },
+  });

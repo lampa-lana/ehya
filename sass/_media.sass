@@ -26,7 +26,11 @@
     &-card
       &--none
         display: block
-
+  .reviews
+    &-slider
+      &__item
+        &::before
+          left: 450px
 @media (max-width: 1200px)
   .container
     max-width: 900px
@@ -49,10 +53,11 @@
     &-look
       &__link
         margin-right: 8px
-  .trends
-    &-wrapper
-  .container
-    &-trends
+  .reviews
+    &-slider
+      &__item
+        &::before
+          left: 403px
 @media (max-width: 992px)
   .container
     max-width: 650px
@@ -72,7 +77,6 @@
     &__button-choise
       &::after, &::before
         display: none
-
   .navbar
     &-top
       padding-bottom: 31px
@@ -177,6 +181,11 @@
         display: none
       &:hover
         color: #183B56
+  .reviews
+    &-slider
+      &__item
+        &::before
+          left: 279px
 @media (max-width: 768px)
   body
     padding-top: 105px
@@ -341,6 +350,7 @@
     &-new
       max-width: 672px
   .trends
+    padding: 0px 0px 20px 0px
     &-shop
       margin-top: 8px
     &__wrapper
@@ -403,6 +413,22 @@
       padding: 16px 23px 20px 20px
       &--active
         padding: 16px 17px 20px 20px
+  .container
+  &-reviews
+    max-width: 630px
+  .reviews
+    &-slider
+      &__item
+        margin-bottom: 22px
+        &::before
+          left: 283px
+      &__text
+        height: 210px
+        overflow-y: auto
+    &-user
+      margin: auto
+      max-width: 600px
+      margin-bottom: 28px
 @media (max-width: 700px)
   .container
     max-width: 500px
@@ -488,6 +514,11 @@
       object-fit: cover
     &-title
       margin-bottom: 10px
+  .reviews
+    &-slider
+      &__item
+        &::before
+          left: 212px
 @media (max-width: 567px)
   .container
     max-width: 450px
@@ -629,6 +660,11 @@
         max-width: 16px
       &-plus
         max-width: 25px
+  .reviews
+    &-slider
+      &__item
+        &::before
+          left: 179px
 @media (max-width: 480px)
   .container
     max-width: 300px
@@ -775,6 +811,11 @@
         font-weight: bold
         font-size: 16px
         line-height: 22px
+  .reviews
+    &-slider
+      &__item
+        &::before
+          left: 101px
 @media (max-width: 320px)
   body
     padding-top: 90px
@@ -949,6 +990,7 @@
     &-trends
       max-width: 300px
   .trends
+    padding: 0px 0px 12px 0px
     &-image
       width: 140px
       height: 170px
@@ -1010,3 +1052,26 @@
       &-svg
         width: 16px
         height: 16px
+  .reviews
+    &-slider
+      &__item
+        margin-top: 88px
+        margin-bottom: 14px
+        &::before
+          top: -83px
+          left: 103px
+          width: 70px
+          height: 81px
+          background-image: url(../img/quote-left-sm.svg)
+          background-repeat: no-repeat
+      &__text
+        height: 360px
+        overflow: auto
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.12px
+      &__username
+        padding: 0 40px 0 40px
