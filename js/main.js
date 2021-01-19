@@ -101,19 +101,42 @@ var modalButton = $("[data-toggle=modal]");
     keyboard: {
       enabled: true,
      },
-    /* spaceBetween: 30,
+    spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
         delay: 2500,
-        disableOnInteraction: false,
-      }, */
+        disableOnInteraction: false, 
+      }, 
       pagination: {
         el: '.swiper-pagination',
-        clickable: true,
-      },
-    // Navigation arrows
-    navigation: {
+        clickable: true,       
+     },
+      navigation: {
       nextEl: '.reviews-slider__button-next',
       prevEl: '.reviews-slider__button-prev',
+    },
+    on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
+    }
+  },
+   });
+  
+   var reviewsSlider = new Swiper('.history-slider', {
+    // Optional parameters
+    loop: true,
+    keyboard: {
+      enabled: true,
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.history-info__button-next',
+      prevEl: '.history-info__button-prev',
     },
   });
