@@ -69,7 +69,11 @@ var modalButton = $("[data-toggle=modal]");
         email: {
           required: "Пожалуйста укажите адрес Вашей почты",
           email: "Ваша почта должна быть а формате name@domain.com",
-        },        
+        }, 
+        emailNews: {
+          required: "Пожалуйста укажите адрес Вашей почты",
+          email: "Ваша почта должна быть а формате name@domain.com",
+        },
         phone: {
           required: "Пожалуйста укажите свой телефон",
           phone: "Ваш телефон должен быть в формате of +7(999) 999-99-99",
@@ -139,4 +143,23 @@ var modalButton = $("[data-toggle=modal]");
       nextEl: '.history-info__button-next',
       prevEl: '.history-info__button-prev',
     },
+   });
+/* 
+   var iconSVG = $('.history-info__button-prev');
+  iconSVG.on('mouseover', function() {
+  $(this).find('svg').children().css({
+    'fill': 'none',
+    'stroke': '#183B56'   
+     
   });
+});
+
+iconSVG.on('mouseleave', function() {
+  $(this).find('svg').children().css({
+    'fill': 'none',
+    'stroke': '#959EAD'
+   
+  });
+});
+
+  */
