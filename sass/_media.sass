@@ -55,6 +55,23 @@
         &-life
           top: 297px
           right: 24px
+  .footer
+    &-wrapper
+      max-width: 800px
+    &-social
+      margin-right: 0
+      flex-basis: 56%
+    &-service
+      margin-right: 0
+      margin-bottom: 50px
+    &-nav
+      margin-bottom: 50px
+    &-company
+      flex-basis: 74%
+      align-items: flex-end
+    &-title
+      &__company
+        margin-right: 53px
 @media (max-width: 1200px)
   .container
     max-width: 900px
@@ -307,6 +324,42 @@
         display: none
       &:hover
         color: #FFFFFF
+  .footer
+    svg path
+      fill: #5A7184
+      stroke: inherit
+      stroke-width: inherit
+      &-google
+      &:hover
+        fill: #5A7184
+    svg rect
+      fill: #5A7184
+      stroke: inherit
+      stroke-width: inherit
+      &-google
+      &:hover
+        fill: #5A7184
+    &__link
+      transition: none
+      &::after, &::before
+        display: none
+      &:hover
+        color: #183B56
+  .footer
+    &-social
+      margin-right: 0
+      flex-basis: 47%
+    &-service
+      margin-right: 0
+      margin-bottom: 50px
+    &-nav
+      margin-bottom: 50px
+    &-company
+      flex-basis: 69%
+      align-items: flex-end
+    &-title
+      &__company
+        margin-right: 53px
 @media (max-width: 768px)
   body
     padding-top: 105px
@@ -626,6 +679,25 @@
           left: 364px
   .line
     max-width: 728px
+  .footer
+    padding-top: 63px
+    &-wrapper
+      max-width: 800px
+    &-social
+      margin-right: 0
+      flex-basis: 43.5%
+    &-service
+      margin-right: 0
+      margin-bottom: 25px
+    &-nav
+      margin-bottom: 25px
+    &-company
+      flex-basis: 66.5%
+      align-items: flex-end
+      margin-right: 44px
+    &-title
+      &__company
+        margin-right: 53px
 @media (max-width: 767px)
   .container
     &-history
@@ -816,6 +888,29 @@
         &-next
           bottom: 17px
           left: 262px
+  .footer
+    padding-top: 63px
+    &-wrapper
+      max-width: 500px
+    &-social
+      margin-right: 0
+      flex-basis: 100%
+      order: 5
+      align-items: center
+    &-service
+      margin-right: 0
+      margin-bottom: 30px
+    &-nav
+      margin-bottom: 30px
+      margin-right: 0
+      flex-basis: 70%
+    &-company
+      flex-basis: 70%
+      align-items: flex-start
+      margin-right: 0
+    &-title
+      &__company
+        margin-right: 0
 @media (max-width: 567px)
   .container
     max-width: 450px
@@ -1068,6 +1163,31 @@
       text-align: center
       padding: 0px 24px 0 24px
       top: -41px
+  .footer
+    padding-top: 63px
+    &-wrapper
+      max-width: 300px
+    &-social
+      margin-right: 0
+      flex-basis: 100%
+      order: 5
+      align-items: center
+    &-service
+      margin-right: 0
+      margin-bottom: 30px
+    &-nav
+      margin-bottom: 30px
+      margin-right: 0
+      flex-basis: 70%
+    &-company
+      flex-basis: 85%
+      align-items: flex-start
+      margin-right: 0
+    &-contacts
+      margin-bottom: 67px
+    &-title
+      &__company
+        margin-right: 0
 @media (max-width: 480px)
   .container
     max-width: 300px
@@ -1129,7 +1249,6 @@
     &-top
       &__menu-button
         &--mobile
-
           padding: 9px 101px 9px 101px
     &-menu
       left: 6px
@@ -1266,6 +1385,48 @@
       text-align: center
       padding: 0px 24px 0 24px
       top: -27px
+  .footer
+    padding-top: 49px
+    &-wrapper
+    &-title
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 18px
+    &__link
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+    &__item
+      margin-bottom: 13px
+    &-nav
+      margin-bottom: 17px
+    &-service
+      margin-bottom: 17px
+    &-company
+      margin-bottom: 17px
+    &-contacts
+      margin-bottom: 52px
+    &-logo
+      margin-left: 11px
+      margin-bottom: 11px
+    &-slogan
+      text-align: center
+      margin-bottom: 22px
+    &-text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 24px
+      text-align: center
+    &-social
+      &__links
+        margin-left: 15px
+  .container
+    &-footer
+      max-width: 250px
 @media (max-width: 320px)
   body
     padding-top: 90px
@@ -1540,3 +1701,6 @@
   .container
     &-history
       padding-bottom: 33px
+  .container
+    &-footer
+      max-width: 250px

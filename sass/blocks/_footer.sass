@@ -1,2 +1,110 @@
 .footer
-  padding-top: 100px
+  padding-top: 128px
+  padding-bottom: 100px
+  svg path
+    fill: #5A7184
+    stroke: inherit
+    stroke-width: inherit
+    &-google
+    &:hover
+      fill: #36B37E
+  svg rect
+    fill: #5A7184
+    stroke: inherit
+    stroke-width: inherit
+    &-google
+    &:hover
+      fill: blue
+  &-wrapper
+    margin: auto
+    display: flex
+    justify-content: start
+    align-items: start
+    flex-wrap: wrap
+  &-logo
+    margin-bottom: 24px
+  &-title
+    margin: 0
+    padding: 0
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    color: #183B56
+    margin-bottom: 30px
+  &-links
+    padding: 0
+    margin: 0
+    list-style: none
+  &__item
+    text-decoration: none
+    list-style-type: none
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: #183B56
+    margin-bottom: 24px
+  &__link
+    display: inline-block
+    text-decoration: none
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: #183B56
+    transition: all 0.6s
+    &:after
+      display: block
+      content: ''
+      width: 0%
+      height: 0px
+      background: #1565D8
+      ransition: width 0.4s ease-in-out
+    &:hover:after, &:focus:after
+      width: 100%
+    &:hover
+      color: #1565D8
+  &-social
+    display: flex
+    justify-content: space-between
+    align-items: start
+    flex-direction: column
+    margin-right: 56px
+    &-icon
+      margin-right: 7px
+  &-slogan
+    max-width: 236px
+    margin-bottom: 29px
+  &-text
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: #5A7184
+  &-nav
+    display: flex
+    justify-content: space-between
+    align-items: start
+    flex-direction: column
+    margin-right: 49px
+  &-service
+    display: flex
+    justify-content: space-between
+    align-items: start
+    flex-direction: column
+    margin-right: 46px
+  &-company
+    display: flex
+    justify-content: space-between
+    align-items: start
+    flex-direction: column
+    margin-right: 49px
+  &-contacts
+    display: flex
+    justify-content: space-between
+    align-items: start
+    flex-direction: column
+.container
+  &-footer
+    max-width: 1140px
