@@ -100,6 +100,11 @@
           max-width: 290px
         &--two
           max-width: 290px
+  .newsletter
+    &-wrapper
+      max-width: 900px
+    &-text
+      margin-right: 20px
 @media (max-width: 992px)
   .container
     max-width: 650px
@@ -283,6 +288,25 @@
           right: 353px
         &-life
           left: 395px
+  .newsletter
+    padding: 72px 0 82px 0
+    background-image: url(../img/newsletter-bgm.svg)
+    &-wrapper
+      max-width: 650px
+      flex-direction: column
+    &-text
+      margin-right: 0
+      margin-bottom: 56px
+      align-items: center
+    &-slogan
+      text-align: center
+  .subscribe
+    &__button
+      transition: none
+      &::after, &::before
+        display: none
+      &:hover
+        color: #FFFFFF
 @media (max-width: 768px)
   body
     padding-top: 105px
@@ -1013,6 +1037,36 @@
         &-icon
           width: 48px
           height: 48px
+  .newsletter
+    padding: 72px 0 122px 0
+    &-wrapper
+      max-width: 450px
+      flex-direction: column
+    &-text
+      margin-right: 0
+      margin-bottom: 56px
+      align-items: center
+    &-slogan
+      max-width: 72%
+      text-align: center
+  .subscribe
+    max-width: 300px
+    &__input
+      padding-right: 20px
+    &__button
+      min-width: 300px
+      max-width: 300px
+      padding: 7px 20px 9px 20px
+      right: 2px
+      top: 66px
+    #emailNews-error
+      position: absolute
+      color: #FFFFFF
+      font-size: 14px
+      font-weight: bold
+      text-align: center
+      padding: 0px 24px 0 24px
+      top: -41px
 @media (max-width: 480px)
   .container
     max-width: 300px
@@ -1165,6 +1219,52 @@
       &__item
         &::before
           left: 101px
+  .newsletter
+    background-image: url(../img/newsletter-bgs.svg)
+    padding: 65px 0 122px 0
+    &-wrapper
+      max-width: 450px
+      flex-direction: column
+    &-text
+      margin-right: 0
+      margin-bottom: 36px
+      align-items: center
+    &-title
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      letter-spacing: 0.2px
+      margin-bottom: 22px
+    &-slogan
+      max-width: 87%
+      text-align: center
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      color: #FAFAFB
+  .subscribe
+    max-width: 280px
+    height: 47px
+    &__input
+      padding-right: 20px
+    &__button
+      min-width: 280px
+      max-width: 280px
+      padding: 8px 18px 7px 20px
+      right: 2px
+      top: 58px
+      height: 49px
+    #emailNews-error
+      position: absolute
+      color: #FFFFFF
+      font-size: 14px
+      font-weight: bold
+      text-align: center
+      padding: 0px 24px 0 24px
+      top: -41px
 @media (max-width: 320px)
   body
     padding-top: 90px
@@ -1438,4 +1538,4 @@
         padding: 0 40px 0 40px
   .container
     &-history
-      padding-bottom: 64px
+      padding-bottom: 33px

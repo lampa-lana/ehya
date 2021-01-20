@@ -19,7 +19,7 @@ $body = "
 <h2>Новое Обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Почта:</b> $email<br><br>
-<b>Пароль:</b> $$password<br><br>
+<b>Пароль:</b> $password<br><br>
 <b>Подписка:</b> $emailNews<br><br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$text

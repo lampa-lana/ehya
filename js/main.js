@@ -68,11 +68,11 @@ var modalButton = $("[data-toggle=modal]");
         },
         email: {
           required: "Пожалуйста укажите адрес Вашей почты",
-          email: "Ваша почта должна быть а формате name@domain.com",
+          email: "Ваша почта должна быть в формате name@domain.com",
         }, 
         emailNews: {
           required: "Пожалуйста укажите адрес Вашей почты",
-          email: "Ваша почта должна быть а формате name@domain.com",
+          email: "Ваша почта должна быть в формате name@domain.com",
         },
         phone: {
           required: "Пожалуйста укажите свой телефон",
