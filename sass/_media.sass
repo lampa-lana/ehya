@@ -251,6 +251,16 @@
         &::before
           left: 279px
   .history
+    svg:hover #rect1
+      fill: none
+      stroke: #959EAD
+    svg:hover #path1
+      fill: #959EAD
+    svg:hover #rect2
+      fill: none
+      stroke: #959EAD
+    svg:hover #path2
+      fill: #959EAD
     &-wrapper
       margin: auto
       max-width: 680px
@@ -1069,7 +1079,7 @@
       &-plus
         max-width: 25px
   .reviews
-    padding: 0 0 48px 0
+    padding: 0 0 52px 0
     &-slider
       &__item
         &::before
@@ -1219,20 +1229,17 @@
     background-image: url(../img/header-image2.webp)
     position: relative
     padding: 0px 0 0px 0
-    background-position: right
+    background-position: 88%, 50%
     background-repeat: no-repeat
     background-size: cover
     border-radius: 8px
     &-wrapper
-      padding: 378px 0 51px 6px
+      padding: 150px 0 51px 6px
     &__button-label
-      position: absolute
-      top: 197px
-      right: 88px
       margin-bottom: 24px
+    &__button-choise
+      margin-bottom: 20px
     &-title
-      position: absolute
-      top: 236px
       font-weight: bold
       font-size: 32px
       line-height: 40px
@@ -1247,11 +1254,12 @@
       text-align: center
       padding: 0 10px 0 10px
     &-info
+      margin: auto
       display: flex
       flex-direction: column
       justify-content: space-between
       align-items: center
-      margin-bottom: 40px
+      margin-top: 53px
     &-conditions
       max-width: 320px
       margin: auto
@@ -1402,7 +1410,7 @@
       padding: 0px 24px 0 24px
       top: -27px
   .footer
-    padding-top: 49px
+    padding-top: 48px
     &-wrapper
     &-title
       font-style: normal
@@ -1461,11 +1469,13 @@
     background-size: cover
     border-radius: 8px
     &-wrapper
-      padding: 563px 0 27px 6px
+      padding: 511px 0 27px 6px
     &__button-label
       position: absolute
       top: 375px
       right: 73px
+    &__button-choise
+      margin-bottom: 2px
     &-title
       position: absolute
       top: 422px
@@ -1475,13 +1485,14 @@
       line-height: 40px
       letter-spacing: 0.2px
       text-align: center
+      left: 37px
     &-text
       padding: 0 10px 0 10px
       font-style: normal
       font-weight: normal
       font-size: 16px
       line-height: 28px
-      margin-bottom: 26px
+      margin-bottom: 23px
       text-align: center
       max-width: 280px
     &-info
