@@ -1,5 +1,5 @@
 # ehya
-
+https://svetlana-arustmyan.ru/ehya/
 ehya
 
 Учебный проект для практики на курсе Веб Старт от Glo Academy. Автор курса — Артем Исламов.
