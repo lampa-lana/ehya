@@ -13,4 +13,4 @@ ehya
 ![Иллюстрация к проекту](https://github.com/lampa-lana/ehya/blob/9ca01300a17b6aed502f14f790e2fd21b47d48df/screen_ehya.png)
 
 
-<p>![Сертификат GLO Academy](https://github.com/lampa-lana/ehya/blob/9ca01300a17b6aed502f14f790e2fd21b47d48df/sertifikatglo.png)</p>
+![Сертификат GLO Academy](https://github.com/lampa-lana/ehya/blob/9ca01300a17b6aed502f14f790e2fd21b47d48df/sertifikatglo.png)
