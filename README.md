@@ -9,3 +9,8 @@ ehya
 
 Куратор
 Владислав Якимовский
+
+![Иллюстрация к проекту](https://github.com/lampa-lana/ehya/blob/9ca01300a17b6aed502f14f790e2fd21b47d48df/screen_ehya.png)
+
+
+![Сертификат GLO Academy](https://github.com/lampa-lana/ehya/blob/9ca01300a17b6aed502f14f790e2fd21b47d48df/sertifikatglo.png)
